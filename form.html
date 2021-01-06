@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  .modal-header{
+      border-bottom: 1px solid #ddd;
+    font-size: 2em;
+    padding: 10px;
+  }
+  .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;}
+
+      .modal-footer{
+        /*-webkit-border-radius: 0;*/  
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 10px 16px;
+  }
+  </style>
+<body>
+
+<div class="container">
+  
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ENQUIRE NOW</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+       
+        <div class="modal-header"><button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>Stock Request Form</div>
+        
+      <div class="modal-body">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Product name</label>
+    <input type="name" class="form-control" id="exampleFormControlInput1">
+  </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlInput1">Required quantity</label>
+  <input class="numeric integer optional form-control" type="number" step="1" name="stock_request[qty]" id="stock_request_qty">
+</div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Date Required</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Contact number</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Contact email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name</label>
+    <input type="name" class="form-control" id="exampleFormControlInput1" >
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Shipping country</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>india</option>
+       <option>india</option>
+      <option>india</option>
+      <option>india</option>
+      <option>india</option>
+      <option>india</option>
+     
+     </select>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Instructions</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="please add any additional information here"></textarea>
+  </div>
+<div class="modal-footer">
+   <button type="button" class="btn btn-primary btn-lg" > Submit Request</button>
+  <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal" href=""> Close</button>
+
+ </div>
+
+ 
+
+</form>
+
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
